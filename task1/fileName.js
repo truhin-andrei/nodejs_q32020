@@ -8,7 +8,7 @@ module.exports = key => {
     input = input.toString();
     fs.lstat(input, (err, stats) => {
       if (err) {
-        return console.log(err);
+        return console.log(err.code);
       }
       if (stats.isDirectory()) throw `${input} is directory`;
     });
@@ -27,7 +27,7 @@ module.exports = key => {
     output = output.toString();
     fs.lstat(output, (err, stats) => {
       if (err) {
-        return console.log(err);
+        return console.log(err.code);
       }
       if (stats.isDirectory()) throw `${output} is directory`;
     });
