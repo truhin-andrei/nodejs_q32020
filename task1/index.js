@@ -4,16 +4,14 @@ const { stdin, stdout } = require('process');
 const { pipeline } = require('stream');
 
 const fileName = require('./fileName');
-const coder = require('./coder');
-
-console.log(11, coder('Aopz pz zljyla. Tlzzhnl hivba "_" zftivs!', 7, 'decode'));
+const coderStream = require('./coderStream');
 
 const readStream = fileName('in') ? fs.createReadStream(fileName('in')) : stdin;
 const writeStream = fileName('out')
-  ? fs.createWriteStream(fileName('out'))
+  ? fs.createWriteStream(fileName('out'), { flags: 'a' })
   : stdout;
 
-pipeline(readStream, writeStream, err => {
+pipeline(readStream, coderStream, writeStream, err => {
   if (err) {
     console.log(err);
   }

@@ -24,7 +24,7 @@ module.exports = key => {
   }
 
   if (key === 'out' && output && output !== true) {
-    output = output.toString()
+    output = output.toString();
     fs.lstat(output, (err, stats) => {
       if (err) {
         return console.log(err);
