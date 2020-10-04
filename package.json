@@ -1,0 +1,32 @@
+{
+  "name": "nodejs-task1",
+  "version": "1.0.0",
+  "description": "cesar sipher\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Daesar cipher",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/truhin-andrei/nodejs_q32020.git"
+  },
+  "author": "truhin-andrei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/truhin-andrei/nodejs_q32020/issues"
+  },
+  "homepage": "https://github.com/truhin-andrei/nodejs_q32020#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "eslint": "6.7.2",
+    "eslint-config-prettier": "6.7.0",
+    "eslint-plugin-node": "10.0.0",
+    "eslint-plugin-prettier": "3.1.1",
+    "lint-staged": "9.5.0",
+    "prettier": "1.19.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "minimist": "^1.2.5"
+  }
+}
