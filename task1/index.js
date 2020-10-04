@@ -1,9 +1,12 @@
 const argv = require('minimist')(process.argv.slice(2));
 const fs = require('fs');
-
-const fileName = require('./fileName');
 const { stdin, stdout } = require('process');
 const { pipeline } = require('stream');
+
+const fileName = require('./fileName');
+const coder = require('./coder');
+
+console.log(11, coder('Aopz pz zljyla. Tlzzhnl hivba "_" zftivs!', 7, 'decode'));
 
 const readStream = fileName('in') ? fs.createReadStream(fileName('in')) : stdin;
 const writeStream = fileName('out')
