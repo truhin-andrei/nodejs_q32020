@@ -2,9 +2,10 @@ const argv = require('minimist')(process.argv.slice(2));
 const fs = require('fs');
 
 module.exports = key => {
-  const input = (argv.i || argv.input).toString();
-  const output = (argv.o || argv.output).toString();
-  if (key === 'in' && input) {
+  let input = argv.i || argv.input;
+  let output = argv.o || argv.output;
+  if (key === 'in' && input && input !== true) {
+    input = input.toString();
     fs.lstat(input, (err, stats) => {
       if (err) {
         return console.log(err);
@@ -22,7 +23,8 @@ module.exports = key => {
     return input;
   }
 
-  if (key === 'out' && output) {
+  if (key === 'out' && output && output !== true) {
+    output = output.toString()
     fs.lstat(output, (err, stats) => {
       if (err) {
         return console.log(err);

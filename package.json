@@ -1,7 +1,10 @@
 {
   "name": "nodejs-task1",
   "version": "1.0.0",
-  "description": "cesar sipher\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Daesar cipher",
+  "engines": {
+    "node": ">=11.0.0"
+},
+  "description": "cesar cipher",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
