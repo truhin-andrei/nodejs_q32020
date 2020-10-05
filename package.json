@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "engines": {
     "node": ">=11.0.0"
-},
+  },
   "description": "cesar cipher",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,6 @@
   },
   "homepage": "https://github.com/truhin-andrei/nodejs_q32020#readme",
   "devDependencies": {
-    "nodemon": "^2.0.4",
     "eslint": "6.7.2",
     "eslint-config-prettier": "6.7.0",
     "eslint-plugin-node": "10.0.0",
@@ -29,7 +28,6 @@
     "prettier": "1.19.1"
   },
   "dependencies": {
-    "express": "^4.17.1",
     "minimist": "^1.2.5"
   }
 }

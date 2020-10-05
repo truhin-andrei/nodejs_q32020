@@ -1,4 +1,3 @@
-const argv = require('minimist')(process.argv.slice(2));
 const fs = require('fs');
 const { stdin, stdout } = require('process');
 const { pipeline } = require('stream');
@@ -13,11 +12,7 @@ const writeStream = fileName('out')
 
 pipeline(readStream, coderStream, writeStream, err => {
   if (err) {
-    console.log(err);
+    console.error(err);
   }
   console.log('finished');
 });
-
-console.log(1, argv);
-console.log(2, fileName('in'));
-console.log(3, fileName('out'));
